@@ -76,14 +76,13 @@ public class WebFluxPlaygroundApplication {
 #### 3\. 애플리케이션 속성 설정 (`application.properties`)
 
 ```properties
+spring.application.name=webflux-playground
+
 # 현재 활성화할 섹션 지정 (Java 코드에서 이 값을 사용하여 scanBasePackages 경로를 동적으로 구성할 수 있음)
-section=02
+sec=sec09
 
 # Spring에게 데이터베이스 초기화 스크립트의 위치를 알려줌
 spring.sql.init.data-locations=classpath:sql/data.sql
-
-# R2DBC 리포지토리 스캔을 위한 기본 패키지 지정 (강의 내용에 따라 추정)
-spring.data.r2dbc.repositories.base-packages=com.vinsguru.playground.sec02
 ```
 
   * **목적:** 이 속성 파일은 Spring Boot에게 데이터베이스 초기화에 사용할 SQL 파일의 위치를 알려주고, 특정 패키지만 스캔하도록 애플리케이션 동작을 제어합니다.
