@@ -45,9 +45,7 @@
 
 #### 1\. SQL 스키마 및 데이터 정의 (`data.sql`)
 
-```sql
-파일 참고
-```
+spring-webflux-course/02-webflux-playground/src/main/resources/sql/data.sql
 
   * **목적:** 이 SQL 블록은 애플리케이션에 필요한 데이터베이스 테이블의 구조를 정의하고, 테스트 및 개발에 사용할 초기 데이터를 삽입하는 역할을 합니다.
 
